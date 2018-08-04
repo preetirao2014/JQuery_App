@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GreatWall Massage</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" id="nav">
+        <div class="container-fluid" id="nav_content">
+            <div class="navbar-header" id="logo">
+                <a class="navbar-brand" href="#"><img class="img-responsive" src="https://cdn2.iconfinder.com/data/icons/vacation-landmarks/512/23-512.png"></a>
+                <a class="navbar-title" href="appointment.html"> Great Wall Massage </a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="menu"><a href="index.html" id="Home">Home</a></li>
+                    <li class="menu"><a href="appointment.html" id="appointment" class="active">Appointment</a></li>
+                    <li class="menu"><a href="service.html" id="service">Service</a></li>
+                    <li class="menu"><a href="directions.html" id="dir">Directions</a></li>
+                    <li class="menu"><a href="about_us.html" id="about">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="form">
+        <div class="jumbotron" id="myform">
+            <div class="container">
+                <h3>Please fill out the form</h3>
+                <form>
+                    <small class="text-muted">We'll never share your information with anyone else.</small>
+                    <fieldset class="form-group">
+                        <label for="fName"><span>*</span>First Name</label>
+                        <input type="text" class="form-control" id="fName" placeholder="Your first name" required>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="lName"><span>*</span>Last Name</label>
+                        <input type="text" class="form-control" id="lName" placeholder="Your last name" required>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="city"><span>*</span>City</label>
+                        <input type="text" class="form-control" id="city" placeholder="Des Moines" required>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="state"><span>*</span>State</label>
+                        <select class="form-control" required>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="DC">District Of Columbia</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="phone"><span>*</span>Contact Phone</label>
+                        <input type="tel" class="form-control" id="city" placeholder="xxx-xxx-xxxx" required>
+                    </fieldset>
+                    <button type="submit" class="btn btn-primary" id="next" >Next</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="jumbotron" id="myform2">
+            <div class="container">
+                <h3>Please fill out the form</h3>
+                <form>
+                    <small class="text-muted">We'll never share your information with anyone else.</small>
+                    <fieldset class="form-group" id="">
+                        <label for="spec"><span>*</span>Speicalist</label>
+                        <select class="form-control" required id="specialist">
+                            <option disabled selected value> -- select an option -- </option>
+                            <option value="specialist1">specialist1</option>
+                            <option value="specialist2">specialist2</option>
+                            <option value="specialist3">specialist3</option>
+                            <option value="specialist4">specialist4</option>
+                        </select>
+                        <label for="date"><span>*</span>Date</label>
+                        <select class="form-control" required id="date">
+                            <option disabled selected value> -- select an option -- </option>
+                            <option value="Day1">Today</option>
+                            <option value="Day2">Tomorrow</option>
+                            <option value="Day3">Day after Tomorrow</option>
+                        </select>
+                        <label for="time"><span>*</span>Time slot</label>
+                        <select class="form-control" required id="time">
+                            <option disabled selected value> -- select an option -- </option>
+                            <option value="nine">nine</option>
+                            <option value="ten">ten</option>
+                            <option value="eleven">eleven</option>
+                            <option value="thirteen">thirteen</option>
+                            <option value="forteen">forteen</option>
+                            <option value="fifteen">fifteen</option>
+                            <option value="sixteen">sixteen</option>
+                        </select>
+                    </fieldset>
+                    <button type="submit" class="btn btn-primary" id="submit" >Submit</button>
+                    <!-- <fieldset class="form-group" id="">
+                        <label for="date"><span>*</span>Date</label>
+                        <select class="form-control" required id="date">
+                            <option disabled selected value> -- select an option -- </option>
+                            <option value="Day1">Today</option>
+                            <option value="Day2">Tomorrow</option>
+                            <option value="Day3">Day after Tomorrow</option>
+                        </select>
+                    </fieldset> -->
+
+                    <!-- <fieldset class="form-group" id="">
+                        <label for="state"><span>*</span>Time slot</label>
+                        <select class="form-control" required id="time">
+                            <option disabled selected value> -- select an option -- </option>
+                            <option value="nine">nine</option>
+                            <option value="ten">ten</option>
+                            <option value="eleven">eleven</option>
+                            <option value="thirteen">thirteen</option>
+                            <option value="forteen">forteen</option>
+                            <option value="fifteen">fifteen</option>
+                            <option value="sixteen">sixteen</option>
+                        </select>
+                    </fieldset> -->
+                </form>
+            </div>
+        </div>
+
+        <!--form2-->
+
+
+        <!-- <div class="jumbotron" id="reservation">
+            <p id="ap">Appointments</p>
+            <p id="ap_description"> Click to check availability and schedule an appointment with one of our massage experts.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 portrait">
+                        <a href="https://calendar.google.com/calendar/selfsched?sstoken=UUVIX204dEM4VEhhfGRlZmF1bHR8ZTVlMDJhZTI2NmJjN2JmMDkxZDcwYzg4Njg4YWE2ZTY">
+                            <img id= "lady_img" src="https://a0.lscdn.net/imgs/02425b18-eb1c-4150-b7e3-86a81448ce51/600_q60.jpg" alt="">
+                        </a>
+                        <p class="lady"> Lisa </p>
+
+                    </div>
+                    <div class="col-md-6 col-sm-12 portrait">
+                        <a href="https://calendar.google.com/calendar/selfsched?sstoken=UUctVWp3NUd2RTk3fGRlZmF1bHR8ODMyZTZjOGE2OGU1YzMwMzFjMWE0NDU2OTA4N2I5YmU">
+                            <img id= "lady_img" src="http://paisleywellnesscenter.com/wp-content/uploads/2015/06/Janet-Wells-362x300.jpg" alt="">
+                        </a>
+                        <p class="lady"> Sarah </p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 portrait">
+                        <a href="">
+                            <img id= "lady_img" src="http://www.philips.co.uk/c-dam/master/smarterbeauty/skin-care/skin-care-new/Chico_Shigeta_l.jpg" alt="">
+                        </a>
+                        <p class="lady"> Jessica </p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 portrait">
+                        <a href="">
+                            <img id= "lady_img" src="https://img.grouponcdn.com/deal/xfW2jDJ5YsSAuW7LnFn4/U1-2048x1229/v1/c700x420.jpg" alt="">
+                        </a>
+                        <p class="lady"> Dilailah </p>
+                    </div>
+                </div>
+            </div>
+
+            : use iframe to customize calendar
+            <iframe src="https://calendar.google.com/calendar/embed?src=kimlymmm%40gmail.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div> -->
+    </div>
+    <div id="page">
+        <!--gateway page-->
+        <div id="contact_us">
+            <p>About Us</p>
+        </div>
+        <div class="about_us">
+            <p class="aboutus_p">The Massage Center is open for business on Monday through Saturday between 8 AM and 7 PM. We have many skilled licensed massage therapists available to provide relaxation, rejuvenation and restoration of balance to your body.
+                <br>
+                <br> We are located in a very convenient location with 24 hr parking. It is easily accessible and situated in a clean and safe locality. The surroundings are very peaceful and quiet to help you relax during the massage.
+                <br>
+                <br>Most of our therapists have atleast 5 to 8 years experience and a degree in the field. Several of us hold an additional Master Bodyworker certification. We are all easygoing, friendly and focused on the healing aspects of our profession.</p>
+        </div>
+        <!--Carousel-->
+        <div class="carContainer">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="http://asmt.net/to/sites/default/files/blog/benefits-of-massage-by-citylux-massage.jpg" alt="Chania" width="460" height="345">
+                    </div>
+                    <div class="item">
+                        <img src="http://static.squarespace.com/static/51cf5beae4b0d03267593229/t/51d113f2e4b01d5d20f7cf08/1372720977327/Massage%20Benefits.jpg?format=750w" alt="Chania" width="460" height="345">
+                    </div>
+                    <div class="item">
+                        <img src="http://www.sabarindia.com/massage-benefits.jpg" alt="Flower" width="460" height="345">
+                    </div>
+                    <div class="item">
+                        <img src="img/benefits.jpg" alt="Flower" width="460" height="345">
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+            </div>
+        </div>
+        <!--slider/gateway-->
+        <!-- <div class="slider">
+            <img src="img/benefits.jpg" alt="">
+            <h4>Benefits of Massage</h4>
+            <div class="benefits-list">
+                <p>Anxiety</p>
+                <p>Digestive Disorders</p>
+                <p>Headaches</p>
+                <p>Insomnia due to stress</p>
+                <p>Soft tissue strain</p>
+                <p>Temporary joint pains</p>
+            </div>
+        </div> -->
+        <!--what_we_do gallery-->
+        <div id="what_we_do">
+            <p>What We Do</p>
+        </div>
+        <div class="jumbo">
+            <div class="tr">
+                <article class="td">
+                    <img class="wwd_img" src="img/body_massage.jpg" />
+                    <div class="caption__overlay">
+                        <h1 class="caption__overlay__title">Body Massage</h1>
+                        <p class="caption__overlay__content">Otherwise known as classic massage used to support the long-term health and rehabilitative care of individuals and athletes. Firm but gentle pressure is used with long flowing movements for total relaxation. Increased circulation and relief of muscle tension are results of this massage.</p>
+                    </div>
+                </article>
+                <article class="td">
+                    <img class="wwd_img" src="img/stone_massage.jpg" />
+                    <div class="caption__overlay">
+                        <h1 class="caption__overlay__title">Stone Massage</h1>
+                        <p class="caption__overlay__content">Hot stone massage is a specialty massage where the therapist uses smooth, heated stones, by placing them on the body. The heat can be both deeply relaxing and help warm up tight muscles so the therapist can work more deeply, more quickly.</p>
+                    </div>
+                </article>
+                <article class="td">
+                    <img class="wwd_img" src="img/foot_massage.jpg" />
+                    <div class="caption__overlay">
+                        <h1 class="caption__overlay__title">Foot Massage</h1>
+                        <p class="caption__overlay__content">The genuine reflexology is the application of pressure onto particular areas of the soles of the feet. A reflex action in another part of the body is stimulated by the manipulation of each specific area.</p>
+                    </div>
+                </article>
+                <article class="td">
+                    <img class="wwd_img" src="img/head_massage.jpg" />
+                    <div class="caption__overlay">
+                        <h1 class="caption__overlay__title">Head Massage</h1>
+                        <p class="caption__overlay__content">A treatment based on old Ayurvedic techniques, involving work on the upper back, shoulders, neck, scalp and face. It helps reduce stress, fatigue, and eyestrain, increase mental clarity, relaxes and rejuvenates the receiver</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <!--directions-->
+        <div id="dir">
+            <p>Directions</p>
+        </div>
+        <!--google api-->
+        <div class="directions" id="direction">
+            <iframe id="googleMap" src="https://www.google.com/maps/embed/v1/place?q=great+wall+massage,+Edison,+NJ+08817&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
+            <div id="address_section">
+                <h4 class="address">Address</h4>
+                <p class="address_p">Great Wall Massage
+                    <br> 501 Old Post Rd
+                    <br> Edison, NJ - 08817</p>
+                <br>
+                <br>
+                <h4 class="address"> Phone Number</h4>
+                <p class="address_p"> (732) 248-9988</p>
+            </div>
+        </div>
+    </div>
+    <!--about us-->
+    <!-- <div id="contact_us">
+        <p>About Us</p>
+    </div> -->
+    <!-- <div class="about_us">
+        <p class="aboutus_p">The Massage Center is open for business on Monday through Saturday between 8 AM and 7 PM. We have many skilled licensed massage therapists available to provide relaxation, rejuvenation and restoration of balance to your body.
+            <br>
+            <br> We are located in a very convenient location with 24 hr parking. It is easily accessible and situated in a clean and safe locality. The surroundings are very peaceful and quiet to help you relax during the massage.
+            <br>
+            <br>Most of our therapists have atleast 5 to 8 years experience and a degree in the field. Several of us hold an additional Master Bodyworker certification. We are all easygoing, friendly and focused on the healing aspects of our profession.</p>
+    </div> -->
+    <footer>
+        <div class="jumbotron">
+            <div class="container">
+                <div class="jumbotron">
+                    <div class="col-md-4 col-md-offset-4 col-xs-12">
+                        <p>Location</p>
+                        <p class="des">501 Old Post Rd </p>
+                        <p class="des">Edison NJ, 08817</p>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <p>Contact Us</p>
+                        <p class="des">Any questions or concerns, please call</p>
+                        <p><strong>732-248-9988</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btm">
+            <p>Powered by Technomax</p>
+        </div>
+    </footer>
+</body>
+
+</html>

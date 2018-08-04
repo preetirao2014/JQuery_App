@@ -1,0 +1,340 @@
+* {}
+
+#nav{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: white;
+  border: none;
+}
+
+
+#nav_content{
+  margin-top: 17px;
+}
+
+#myCarousel{
+  position: relative;
+}
+
+#inner{
+  height: 100%;
+  width: 100%;
+}
+
+#inner:hover > .carousel-control {
+  display: block;
+}
+
+.carousel-control{
+  display: none;
+}
+
+#quickNav{
+  position: absolute;
+  width: 40%;
+  height: 200px;
+  top: 45%;
+  left: 30%;
+  margin: auto;
+  color: white;
+  font-size: 34px;
+  text-align: center;
+}
+
+
+#quickBtn{
+  margin: auto;
+}
+
+#quickBtn>a{
+  padding: 15px;
+  color: grey;
+  width: 20%;
+}
+
+footer .jumbotron{
+  background-color: #1a1a1a;
+  color: #e6e6e6;
+  margin-bottom: 0;
+}
+
+
+p.des{
+  font-size: 18px;
+  color: #a6a6a6;
+}
+
+.btm{
+  text-align: center;
+  background-color: #0d0d0d;
+  padding: 15px;
+}
+
+footer{
+  bottom: 0;
+}
+
+.btm p{
+  vertical-align: middle;
+}
+
+#form {
+    display: none;
+
+}
+
+#myform{
+  padding-top: 58px;
+  height: 700px;
+}
+
+#myform2{
+  display: none;
+}
+
+#reservation{
+  display: none;
+}
+
+#ap {
+    text-align: center;
+    position: relative;
+    top: 5%;
+    width: 100%;
+    font-family: 'Copperplate Gothic Light', sans-serif;
+    font-size: 48px;
+    color: #800000;
+}
+
+.portrait{
+  height: 400px;
+}
+
+.portrait img{
+  height: 70%;
+  width: 70%;
+  border-radius: 10%;
+  position: absolute;
+  margin-left: 15%;
+  padding:0;
+  border: 10px solid white;
+  -webkit-transition: all 1.0s ease 0s;
+    -moz-transition: all 1.0s ease 0s;
+    -o-transition: all 1.0s ease 0s;
+    -ms-transition: all 1.0s ease 0s;
+    transition: all 1.0s ease 0s;
+}
+
+.portrait img:hover{
+    box-shadow: 10px 10px 5px #888888;
+}
+
+#reservation {
+  overflow: auto;
+}
+
+#reservation form {
+    border:2px solid black;
+    width: 80%;
+    margin-left:25%;
+}
+
+#ap_description
+{
+    text-align: center;
+    float:center;
+    font-family: 'Copperplate Gothic Light';
+    color: #800000;
+    font-size: 25px;
+}
+
+.lady{
+    text-align: center;
+    margin-top: 50%;
+    float:center;
+    font-family: 'Copperplate Gothic Light';
+    color: #800000;
+    font-size: 20px;
+}
+
+fieldset span {
+    color: red;
+}
+
+.navbar-brand img {
+    height: 100%;
+    width: auto;
+}
+
+.collapse.navbar-collapse {}
+
+.nav.navbar-nav.navbar-right{
+
+}
+
+#technomax{
+    text-align: center;
+}
+
+/*.nav.navbar-nav li{
+    width:25%;
+  }*/
+
+.navbar-default {
+    margin: 0;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  border-bottom: 2px solid #800000;
+}
+.navbar-default .navbar-nav>li>a.active {
+  border-bottom: 2px solid #800000;
+}
+
+
+.nav.navbar-nav li {
+    font-family: Copperplate Gothic Light;
+    /*Sravan*/
+    border-bottom-color: transparent;
+    /*Sravan*/
+    border-bottom-style: solid;
+    background-color: white;
+}
+
+#page{
+    margin-top: 50px;
+}
+
+.menu{
+    width: auto;
+}
+
+.menu:hover {
+    outline-color: #505050;
+    border-bottom-color: #505050;
+    border-bottom-style: solid;
+    transition-property: color;
+}
+
+
+/*.nav.navbar-nav li:hover {
+    background-color: #ffcc99;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
+}
+*/
+
+.navbar-header {
+
+}
+
+.navbar-title {
+    color: #800000;
+    text-decoration: none;
+    font-family: 'Brush Script MT', sans-serif;
+    font-size: 40px;
+}
+
+.navbar-title:hover {
+    text-decoration: none;
+    color: #cc4400;
+}
+
+
+/*carousel css*/
+
+.carContainer {
+    width: 100%;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    height: 780px;
+    margin: auto;
+}
+
+.carousel.slide {
+    width: 100%;
+}
+
+.carousel-inner {
+    width: 70%;
+    margin: auto;
+}
+
+#dir p {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding-top: 3%;
+    font-family: 'Copperplate Gothic Light', sans-serif;
+    font-size: 48px;
+    color: #800000;
+}
+
+#direction {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    position: relative;
+    display: block;
+    height: 100%;
+}
+
+#googleMap {
+    position: relative;
+    margin-top: 0.8%;
+    height: 500px;
+    width: 60%;
+    margin-left: 10%;
+}
+
+#address_section {
+    position: absolute;
+    top: 15%;
+    left: 75%;
+}
+
+.address {
+    font-family: 'Copperplate Gothic Light', sans-serif;
+    font-size: 24px;
+    color: #800000;
+}
+
+.address_p {
+    font-family: 'Copperplate Gothic Light', sans-serif;
+    font-size: 20px;
+}
+
+#contact_us {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding-top: 1%;
+    font-family: 'Copperplate Gothic Light', sans-serif;
+    font-size: 48px;
+    color: #800000;
+}
+
+/* .about_us {
+    width: 100%;
+    background-color: #ffcc99;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.aboutus_p {
+    font-family: 'Copperplate Gothic Light', sans-serif;
+    font-size: 20px;
+    width: 80%;
+    text-align: justify;
+    margin-left: 10%;
+} */
+
+.panel-footer div {
+    display: inline-block;
+}
+
+#contact {
+    margin-top: 1%;
+    float: right;
+}

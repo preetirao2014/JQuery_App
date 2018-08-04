@@ -1,0 +1,15 @@
+#conf{
+	position:absolute;
+	top:40%;
+}
+
+#conf_message{
+    font-size: 32px;
+    text-align: center;
+    color:black;
+}
+
+#conf_message span{
+    font-size: 20px;
+    color:black;
+}
